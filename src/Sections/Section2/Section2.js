@@ -13,7 +13,7 @@ import deeImg from '../../Assets/dee.png'
 
 const Section2 = () => {
     return (
-        <div className="container-fluid  bg-dark  ">
+        <div className="container-fluid  bg-dark">
 
             <div className="row">
                 <div className='col-md-6'>
