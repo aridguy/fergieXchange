@@ -1,8 +1,6 @@
 import React from "react";
 import './Section1.css';
 import planeImg from '../../Assets/plane.png'
-
-
 import secImg from '../../Assets/sec.png'
 
 const Section1 = () => {
