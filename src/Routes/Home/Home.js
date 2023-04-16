@@ -1,6 +1,6 @@
 import React from "react";
 import './Home.css'
-import LandImage from '../../Assets/ambassadors_eafahi.png.svg'
+import LandImage from '../../Assets/ambassadors_eafahi.png.png'
 
 const Home = () => {
     return (
@@ -25,17 +25,14 @@ const Home = () => {
                                 <div className="col-md-3"></div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-2"></div>
-                            <div className="col-md-8">
-                                <div className="potoLanding text-center">
-                                    <img src={LandImage} alt="lading page icon" />
-                                </div>
-                            </div>
-                            <div className="col-md-2"></div>
-                        </div>
+                        <img width='800' className="text-center picsLanding mt-4" src={LandImage} alt="lading page icon" />
+
                     </div>
                     <div className="col-md-2"></div>
+                </div>
+                <div className="row">
+                    <div className="col-md-6">/ljbs/bvlja'fjbag'lfjn'galnd'olakwfn'okbna'fkj'lf</div>
+                    <div className="col-md-6">/ljbs/bvlja'fjbag'lfjn'galnd'olakwfn'okbna'fkj'lf</div>
                 </div>
             </div>
         </div>
