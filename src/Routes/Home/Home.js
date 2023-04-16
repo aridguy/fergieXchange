@@ -16,11 +16,11 @@ const Home = () => {
                             <div className="row">
                                 <div className="col-md-3"></div>
                                 <div className="col-md-6">
-                                    <span>
+                                    <span className="txts very-black">
                                         Enjoy a seamless and hassle free experience, trading your gift cards and cryptocurrencies with
                                         The Shawn Exchange.
-                                    </span>
-                                    <button className="getStartedBtn mt-3">Get Started</button>
+                                    </span> 
+                                    <div><button className="getStartedBtn mt-3">Get Started</button></div>
                                 </div>
                                 <div className="col-md-3"></div>
                             </div>
@@ -31,8 +31,17 @@ const Home = () => {
                     <div className="col-md-2"></div>
                 </div>
                 <div className="row">
-                    <div className="col-md-6">/ljbs/bvlja'fjbag'lfjn'galnd'olakwfn'okbna'fkj'lf</div>
-                    <div className="col-md-6">/ljbs/bvlja'fjbag'lfjn'galnd'olakwfn'okbna'fkj'lf</div>
+                    <div className="col-md-5">
+                        <h1 className="very-black">We pride ourselves in
+                            giving the best rate for<br />
+                            <span className="brand"> crypto and gift cards.</span>
+                        </h1>
+                        <p className="txts very-black">We pride ourselves in
+                            giving the best rate for
+                            crypto and gift cards.
+                        </p>
+                    </div>
+                    <div className="col-md-7">/ljbs/bvlja'fjbag'lfjn'galnd'olakwfn'okbna'fkj'lf</div>
                 </div>
             </div>
         </div>
