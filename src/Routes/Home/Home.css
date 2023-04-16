@@ -8,3 +8,17 @@
     
 }
 
+.very-black{
+    color: #000000;
+}
+
+.getStartedBtn{
+    background-color: #FF7000;
+    width: 15em;
+    outline: none;
+    border: none;
+    color: white;
+    height: 3em;
+    border-radius: 4px;
+
+}
