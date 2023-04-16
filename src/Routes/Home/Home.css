@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Urbanist:wght@700;900&display=swap');
+
+.heading1 {
+    font-size: 3em;
+    color: #FF7000;
+    font-weight: 800;
+    font-family: 'Rubik', sans-serif, Urbanist;
+    
+}
