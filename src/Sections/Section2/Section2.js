@@ -13,7 +13,7 @@ import deeImg from '../../Assets/dee.png'
 
 const Section2 = () => {
     return (
-        <div className="container-fluid  bg-dark  ">
+        <div className="container-fluid bg-info">
 
             <div className="row">
                 <div className='col-md-6'>
@@ -21,27 +21,24 @@ const Section2 = () => {
                         <b className="blu">Cryptocurrency</b> <br />
                         Effortlessly</h3>
                     <p className="bl">With a few taps on your smartphone, you can <br />
-                     securely and efficiently trade a variety of <br />
-                     digital assets.</p>
-                     <b className="b">We buy</b>
-                     <div className="bluee"> 
-                     <img width="50" src={vec5Img} alt='vec5' />
-                     <img width="50" src={vecImg} alt='vec' />
-                     <img width="50" src={vec1Img} alt='vec1' />
-                     <img width="50" src={vec2Img} alt='vec2' />
-                     <img width="50" src={vec4Img} alt='vec4' />
-                     <img width="50" src={vec3Img} alt='vec3' />
-                     <img width="50" src={vec8Img} alt='vec8' />
-                     <img width="50" src={vec7Img} alt='vec7' />
-                     <img width="50" src={vec6Img} alt='vec6' />
-                    
-                     <a className="">+100 more</a>
-                
-                     
-                     </div>
+                        securely and efficiently trade a variety of <br />
+                        digital assets.</p>
+                    <b className="b">We buy</b>
+                    <div className="bluee">
+                        <img width="50" src={vec5Img} alt='vec5' />
+                        <img width="50" src={vecImg} alt='vec' />
+                        <img width="50" src={vec1Img} alt='vec1' />
+                        <img width="50" src={vec2Img} alt='vec2' />
+                        <img width="50" src={vec4Img} alt='vec4' />
+                        <img width="50" src={vec3Img} alt='vec3' />
+                        <img width="50" src={vec8Img} alt='vec8' />
+                        <img width="50" src={vec7Img} alt='vec7' />
+                        <img width="50" src={vec6Img} alt='vec6' />
+                        <i>+100 more</i>
+                    </div>
                 </div>
                 <div className="col-md-6">
-                <img className="pt-5" width="450" src={deeImg} alt='dee' />
+                    <img className="pt-5" width="450" src={deeImg} alt='dee' />
 
 
                 </div>
