@@ -26,3 +26,18 @@
     color: white;
 }
 
+.very-black{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.gradients{
+    color: linear-gradient(red, yellow);
+}
+.bigger{
+    font-size: 4em;
+}
+
+.bigTxt{
+    font-size:1.8em;
+}

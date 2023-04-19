@@ -13,38 +13,30 @@ import deeImg from '../../Assets/dee.png'
 
 const Section2 = () => {
     return (
-        <div className="container-fluid bg-info">
-
-            <div className="row">
-                <div className='col-md-6'>
-                    <h3 className="blue">Trade <br />
-                        <b className="blu">Cryptocurrency</b> <br />
-                        Effortlessly</h3>
-                    <p className="bl">With a few taps on your smartphone, you can <br />
-                        securely and efficiently trade a variety of <br />
-                        digital assets.</p>
-                    <b className="b">We buy</b>
-                    <div className="bluee">
-                        <img width="50" src={vec5Img} alt='vec5' />
-                        <img width="50" src={vecImg} alt='vec' />
-                        <img width="50" src={vec1Img} alt='vec1' />
-                        <img width="50" src={vec2Img} alt='vec2' />
-                        <img width="50" src={vec4Img} alt='vec4' />
-                        <img width="50" src={vec3Img} alt='vec3' />
-                        <img width="50" src={vec8Img} alt='vec8' />
-                        <img width="50" src={vec7Img} alt='vec7' />
-                        <img width="50" src={vec6Img} alt='vec6' />
-                        <i>+100 more</i>
+        <div>
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="mt-5 pt-5">
+                            <h2 className="bigger">
+                                <span className="very-black">Trade</span>
+                                <br /> <span className="gradients">Cryptocurrencies</span>
+                                <br /> <span className="very-black">Effortlessly</span>
+                            </h2>
+                            <p className="bigTxt">
+                                With a few taps on your smartphone, you can <br />
+                                securely and efficiently trade a variety of <br />
+                                digital assets.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="col-md-6">
-                    <img className="pt-5" width="450" src={deeImg} alt='dee' />
-
-
+                    <div className="col-md-6">
+                        <img className="float-end" width='400' src={deeImg} alt="dee sectioon iconic" />
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Section2;
+export default Section2

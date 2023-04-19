@@ -35,3 +35,20 @@
 .txts{
     font-size: x-large;
 }
+
+.tabs1{
+    border: none;
+    outline: none;
+    width: 30%;
+    height: 3em;
+    background-color: #fb9546;
+    border-radius: 5px;
+}
+.tabs1:focus{
+    border: none;
+    outline: none;
+    width: 30%;
+    height: 3em;
+    background-color: #411d01;
+    color: white;
+}
