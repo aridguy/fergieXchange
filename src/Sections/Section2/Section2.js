@@ -18,20 +18,33 @@ const Section2 = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="mt-5 pt-5">
-                            <h2 className="bigger">
+                            <h2 className="bigger mx-5">
                                 <span className="very-black">Trade</span>
                                 <br /> <span className="gradients">Cryptocurrencies</span>
                                 <br /> <span className="very-black">Effortlessly</span>
                             </h2>
-                            <p className="bigTxt">
+                            <p className="bigTxt mx-5">
                                 With a few taps on your smartphone, you can <br />
                                 securely and efficiently trade a variety of <br />
                                 digital assets.
                             </p>
                         </div>
+                        <div className="crypticon mx-5">
+                            <strong>We buy</strong> <br />
+                            <img src={vecImg} alt="vec" /> &nbsp;
+                            <img src={vec1Img} alt="vec" /> &nbsp;
+                            <img src={vec2Img} alt="vec" /> &nbsp;
+                            <img src={vec3Img} alt="vec" /> &nbsp;
+                            <img src={vec4Img} alt="vec" /> &nbsp;
+                            <img src={vec5Img} alt="vec" /> &nbsp;
+                            <img src={vec6Img} alt="vec" /> &nbsp;
+                            <img src={vec7Img} alt="vec" /> &nbsp;
+                            <img src={vec8Img} alt="vec" /> &nbsp;
+                            <span>+100 more</span>
+                        </div>
                     </div>
-                    <div className="col-md-6">
-                        <img className="float-end" width='400' src={deeImg} alt="dee sectioon iconic" />
+                    <div className="col-md-6 mt-5">
+                        <img className="float-end mt-5" width='400' src={deeImg} alt="dee sectioon iconic" />
                     </div>
                 </div>
             </div>
