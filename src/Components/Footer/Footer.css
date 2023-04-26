@@ -1,1 +1,20 @@
+.down{
+    position: relative;
+    top: 18em;
+    left: 5em;
 
+}
+.up{
+    background-color: black;
+    height: 30em;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.chi{
+    border-color: rgba(256, 256, 256, .15) !important;
+}
+
+.ha{
+    margin-top: 90px;
+}

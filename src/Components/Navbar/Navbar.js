@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = () => {
     return (
@@ -46,7 +49,7 @@ const Navbar = () => {
 
 
                         <div className="d-flex align-items-center">
-                            <button type="button" className="btn btn-link px-3 me-2">
+                            <button type="button" className="btn btn-primary me-3">
                                 Login
                             </button>
                             <button type="button" className="btn btn-primary me-3">
@@ -59,9 +62,7 @@ const Navbar = () => {
                     </div>
 
                 </div>
-
             </nav>
-
         </div>
     )
 }
