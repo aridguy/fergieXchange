@@ -8,7 +8,7 @@ const Section1 = () => {
         <div className="container-fluid fiona mt-5">
             <div className="row">
                 <div className='col-md-6'>
-                    <img width="650" src={secImg} alt='sec' />
+                    <img className="full-widths" src={secImg} alt='sec' />
                 </div>
                 <div className="col-md-6">
                     <h1 className="fio">Enjoy the ease <br />

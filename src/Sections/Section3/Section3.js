@@ -1,19 +1,14 @@
 import React from "react";
 import './Section3.css';
-import ituImg from '../../Assets/itu.png'
+import ituImg from '../../Assets/GiftCardIconics.svg'
 import fraImg from '../../Assets/Frame.png'
 
 const Section3 = () => {
     return (
         <div className="container">
-            <div className="row">
+            <div className="row mt-5 pt-4">
                 <div className='col-md-6'>
-                    <img className="pt-5" width="350" src={ituImg} alt='itu' />
-                    {
-                        // <img className="pt-5 fine" width="150" src={ruImg} alt='ru' />
-                        // <img className="pt-5 fin" width="110" src={ittuImg} alt='ru' />
-                    }
-
+                    <img className="pt-5 full-widths" src={ituImg} alt='itu' />
                 </div>
                 <div className="col-md-6">
                     <h3 className="f very-black">Sell Gift cards at <br /> Competitive rates.</h3>

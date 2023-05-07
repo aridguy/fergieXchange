@@ -18,3 +18,23 @@
     top: 24em;
     
 }
+
+.display-7 {
+    position: relative;
+    font-size: 1.2em;
+}
+
+.size-3{
+    font-size: 2em;
+}
+
+.cursor{
+    cursor: pointer;
+}
+.sizesmall{
+    font-size: 10px;
+}
+
+.hyperlinks{
+    color: rgb(22, 125, 236);
+}

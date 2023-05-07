@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../Assets/Logo.jpg"
 
 const Navbar = () => {
     return (
@@ -10,7 +11,7 @@ const Navbar = () => {
 
                     <a className="navbar-brand me-2" href="/">
                         <img
-                            src="https://pps.whatsapp.net/v/t61.24694-24/268498010_3136025683288017_8236285941597212071_n.jpg?ccb=11-4&oh=01_AdTz7yiIzuhkVACBYtPY3mNykTg6B0O5TbaOcMTM5QWt3Q&oe=643FA9ED"
+                            src={Logo}
                             height="16"
                             alt="MDB Logo"
                         /> FERGIEXCHANGE LIMITED

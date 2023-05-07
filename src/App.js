@@ -12,6 +12,8 @@ import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <div>
+    
+     
       <Navbar />
       <Home />
       <Section1 />

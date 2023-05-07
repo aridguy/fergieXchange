@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Section2.css';
 import vec5Img from '../../Assets/vec5.png'
 import vecImg from '../../Assets/vec.png'
@@ -10,8 +10,14 @@ import vec8Img from '../../Assets/vec8.png'
 import vec7Img from '../../Assets/vec7.png'
 import vec6Img from '../../Assets/vec6.png'
 import deeImg from '../../Assets/dee.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Section2 = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
         <div>
             <div className="container mt-5">
@@ -29,7 +35,7 @@ const Section2 = () => {
                                 digital assets.
                             </p>
                         </div>
-                        <div className="crypticon mx-5">
+                        <div className="crypticon mx-5 " data-aos="zoom-in">
                             <strong>We buy</strong> <br />
                             <img src={vecImg} alt="vec" /> &nbsp;
                             <img src={vec1Img} alt="vec" /> &nbsp;
@@ -44,7 +50,7 @@ const Section2 = () => {
                         </div>
                     </div>
                     <div className="col-md-6 mt-5">
-                        <img className="float-end mt-5" width='400' src={deeImg} alt="dee sectioon iconic" />
+                        <img className="float-end mt-5 full-widths" src={deeImg} alt="dee sectioon iconic" />
                     </div>
                 </div>
             </div>
