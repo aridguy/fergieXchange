@@ -22,7 +22,6 @@ const Footer = () => {
                             <hr />
                         </div>
                         <div className="col-md-1">
-
                         </div>
                         <div className="col-md-2">
                             <strong>Quicklinks</strong>

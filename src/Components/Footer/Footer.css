@@ -1,22 +1,22 @@
-.sip{
-    width: 38px;
-     height: 38px;
+.down{
+    position: relative;
+    top: 18em;
+    left: 5em;
 
 }
-.si{
-    position: relative;
-    left: 55em;
+.up{
+    background-color: black;
+    height: 30em;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
-.sii{
-    position: relative;
-    left: 35em;
-    top: 16em;
+.chi{
+    border-color: rgba(256, 256, 256, .15) !important;
 }
 .siii{
     position: relative;
-    
     top: 24em;
-    
 }
 
 .display-7 {
