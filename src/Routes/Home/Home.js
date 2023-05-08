@@ -30,25 +30,25 @@ const Home = () => {
     }
 
     // defaulst guest login screen
-    const handleGuests = () =>{
+    const handleGuests = () => {
         setGuestGo(true);
         setOpenRegTab(false);
         setOpenLoginTabs(false);
 
     }
     // switching to register screen
-    const handleRegisterNewUser = () =>{
+    const handleRegisterNewUser = () => {
         setOpenRegTab(true);
         setGuestGo(false);
         setOpenLoginTabs(false);
 
     }
     // switching to loging existing user screen
-    const handleLoginUsers = () =>{
+    const handleLoginUsers = () => {
         setOpenLoginTabs(true);
         setOpenRegTab(false);
         setGuestGo(false);
-       
+
 
     }
 
@@ -62,7 +62,7 @@ const Home = () => {
                     <div className="col-md-2"></div>
                     <div className="col-md-8 mt-5">
                         <div className="contentsHeader text-center">
-                            <p className="heading1">
+                            <p className="heading1" data-aos="zoom-in" data-aos-delay="400">
                                 <span className="very-black">Trade</span>
                                 <span> gift cards & crypto</span> <br />
                                 <span className="very-black">with ease</span>
@@ -70,21 +70,23 @@ const Home = () => {
                             <div className="row">
                                 <div className="col-md-3"></div>
                                 <div className="col-md-6">
-                                    <span className="txts very-black">
+                                    <span className="txts very-black" data-aos="zoom-in" data-aos-delay="500">
                                         Enjoy a seamless and hassle free experience, trading your gift cards and cryptocurrencies with
                                         The Shawn Exchange.
                                     </span>
-                                    <div><button onClick={handleCloseLogin} className="getStartedBtn mt-3">Get Started</button></div>
+                                    <div><button data-aos="zoom-in" data-aos-delay="600" onClick={handleCloseLogin} className="getStartedBtn mt-3">Get Started</button></div>
                                 </div>
                                 <div className="col-md-3"></div>
                             </div>
                         </div>
-                        <img className="text-center picsLanding mt-4 full-widths" src={LandImage} alt="lading page icon" />
+                        <img data-aos="zoom-in" data-aos-delay="700" className="text-center picsLanding mt-4 full-widths" src={LandImage} alt="lading page icon" />
                     </div>
                     <div className="col-md-2"></div>
                 </div>
                 <div className="row mt-5 pt-5">
-                    <div className="col-md-5">
+                    <div className="col-md-5" data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" data-aos-delay="300">
                         <h1 className="very-black">We pride ourselves in
                             giving the best rate for<br />
                             <span className="brand"> crypto and gift cards.</span>
@@ -105,7 +107,9 @@ const Home = () => {
                         <div className="row p-3">
                             {
                                 currentProfileTab === 'mission' &&
-                                <div className="missionTab">
+                                <div className="missionTab" data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine" data-aos-delay="200">
                                     OpenSea is building the world's most trusted and
                                     inclusive peer-to-peer NFT marketplace. OpenSea
                                     makes minting, purchasing and selling NFTs frictionless,
@@ -115,7 +119,9 @@ const Home = () => {
                             }
                             {
                                 currentProfileTab === 'vision' &&
-                                <div className="visionTab">
+                                <div className="visionTab" data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine">
                                     OpenSea strives to be the most trustworthy and
                                     secure marketplace for NFTs. Finding and eliminating
                                     current vulnerabilities is a top priority. OpenSea
@@ -126,7 +132,9 @@ const Home = () => {
                             }
                             {
                                 currentProfileTab === 'values' &&
-                                <div className="valuesTab">
+                                <div className="valuesTab" data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine">
                                     OpenSea strives to be the most trustworthy and secure
                                     marketplace for NFTs. Finding and eliminating current
                                     vulnerabilities is a top priority. OpenSea highly values

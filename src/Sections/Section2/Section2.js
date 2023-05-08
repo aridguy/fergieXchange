@@ -35,22 +35,22 @@ const Section2 = () => {
                                 digital assets.
                             </p>
                         </div>
-                        <div className="crypticon mx-5 " data-aos="zoom-in">
+                        <div className="crypticon mx-5 " data-aos="zoom-in" data-aos-delay="300">
                             <strong>We buy</strong> <br />
-                            <img src={vecImg} alt="vec" /> &nbsp;
-                            <img src={vec1Img} alt="vec" /> &nbsp;
-                            <img src={vec2Img} alt="vec" /> &nbsp;
-                            <img src={vec3Img} alt="vec" /> &nbsp;
-                            <img src={vec4Img} alt="vec" /> &nbsp;
-                            <img src={vec5Img} alt="vec" /> &nbsp;
-                            <img src={vec6Img} alt="vec" /> &nbsp;
-                            <img src={vec7Img} alt="vec" /> &nbsp;
-                            <img src={vec8Img} alt="vec" /> &nbsp;
-                            <span>+100 more</span>
+                            <img data-aos="zoom-in" data-aos-delay="100" src={vecImg} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="200" src={vec1Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="300" src={vec2Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="400" src={vec3Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="500" src={vec4Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="600" src={vec5Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="700" src={vec6Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="800"src={vec7Img} alt="vec" /> &nbsp;
+                            <img data-aos="zoom-in" data-aos-delay="900" src={vec8Img} alt="vec" /> &nbsp;
+                            <span data-aos="zoom-in" data-aos-delay="1000">+100 more</span>
                         </div>
                     </div>
                     <div className="col-md-6 mt-5">
-                        <img className="float-end mt-5 full-widths" src={deeImg} alt="dee sectioon iconic" />
+                        <img data-aos="zoom-in" data-aos-delay="300" className="float-end mt-5 full-widths" src={deeImg} alt="dee sectioon iconic" />
                     </div>
                 </div>
             </div>
