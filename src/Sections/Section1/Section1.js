@@ -5,7 +5,7 @@ import secImg from '../../Assets/sec.png'
 
 const Section1 = () => {
     return (
-        <div className="container-fluid fiona mt-5">
+        <div className="container-fluid fiona">
             <div className="row">
                 <div className='col-md-6'>
                     <img className="full-widths" src={secImg} alt='sec' />

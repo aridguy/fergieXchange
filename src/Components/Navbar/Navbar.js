@@ -1,7 +1,18 @@
 import React from "react";
 import Logo from "../../Assets/Logo.jpg"
+import Swal from 'sweetalert2'
+
 
 const Navbar = () => {
+   const handleCheck = () =>{
+    Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+   }
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -10,7 +21,7 @@ const Navbar = () => {
                         <img
                             src={Logo}
                             height="16"
-                            alt="MDB Logo"
+                            alt=" Logo"
                         /> FERGIEXCHANGE LIMITED
 
                     </a>
@@ -27,26 +38,23 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarButtonsExample">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">About Us</a>
+                            <li onClick={handleCheck} className="nav-item">
+                                <span className="nav-link" href="/">About Us</span>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Services</a>
+                                <span className="nav-link" href="/">Services</span>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Faq</a>
+                                <span className="nav-link" href="/">Faq</span>
                             </li>
                         </ul>
                         <div className="d-flex align-items-center">
                             <button type="button" className="btn btn-primary me-3">
-                                Login
+                                Continue as guest
                             </button>
                             <button type="button" className="btn btn-primary me-3">
-                                Sign up for free
+                                Login/Register
                             </button>
-                            <a
-                                className="btn btn-dark px-3"
-                                href="/" role="button"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
 
