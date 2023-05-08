@@ -3,9 +3,25 @@ import './Home.css'
 import LandImage from '../../Assets/undraw_bitcoin_re_urgq.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Swal from 'sweetalert2'
+import { useNavigate } from "react-router-dom";
+import Section1 from '../../Sections/Section1/Section1';
+import Section2 from '../../Sections/Section2/Section2';
+import Section3 from '../../Sections/Section3/Section3';
+import Faq from '../../Sections/Faq/Faq';
+import Footer from '../../Components/Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Home = () => {
+    const navigate = useNavigate()
+    const handleCheck = () => {
+        Swal.fire({
+            title: 'Login Successful',
+        }).then(() => {
+            navigate('/dashboard')
+        })
+    }
+
     // initiating the aos animation
     useEffect(() => {
         AOS.init();
@@ -57,6 +73,7 @@ const Home = () => {
 
     return (
         <div className="ani-backgrd">
+            <Navbar />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-md-2"></div>
@@ -174,7 +191,7 @@ const Home = () => {
                                                         <h5>Continue as guest</h5>
                                                         <p><input type="text" className="form-control" placeholder="guest name e.g Makanaki" /></p>
                                                         <p><input type="email" className="form-control" placeholder="makanaki@aol.com" /></p>
-                                                        <button className="btn btn-primary btn-block">Continue to Dashboard</button>
+                                                        <button onClick={handleCheck} className="btn btn-primary btn-block">Continue to Dashboard</button>
                                                         <div className="row mt-4">
                                                             <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i class="fas fa-user-group"></i> New account!</span></div>
                                                             <div className="col-md-4"><span onClick={handleLoginUsers} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-tie"></i> Login</span></div>
@@ -236,6 +253,16 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+            }
+            {
+                // ALL OTHER HOME PAGE SECTION
+                <div>
+                    <Section1 />
+                    <Section2 />
+                    <Section3 />
+                    <Faq />
+                    <Footer />
+                </div>
             }
         </div>
     )
