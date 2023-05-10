@@ -14,11 +14,53 @@ import Navbar from '../../Components/Navbar/Navbar'
 
 const Home = () => {
     const navigate = useNavigate()
+
     const handleCheck = () => {
+        let timerInterval
         Swal.fire({
-            title: 'Login Successful',
-        }).then(() => {
-            navigate('/dashboard')
+            
+            html: 'checking login details <b></b>.',
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'you have successfully logged in!',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Continue to Dashboard!',
+                    confirmButtonColor: '#336799',
+                    preConfirm: () => {
+                        navigate('/dashboard')
+                    },
+                }
+                )
+            } else{
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'you have successfully logged in!',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Continue to Dashboard!',
+                    confirmButtonColor: '#336799',
+                    preConfirm: () => {
+                        navigate('/dashboard')
+                    },
+                }
+                )
+            }
         })
     }
 

@@ -38,6 +38,23 @@
 		opacity: 0;
 	}
 }
+.orange{
+	color: orange;
+}
+
+.getBig{
+	font-size: 1.5em;
+}
+.bkgWrap{
+	background-color: #414f54;
+
+}
+
+.hidden-logout{
+	position: absolute;
+	top: 8em;
+	right: 8em;
+}
 
 body {
 	font-size: 0.9rem;
