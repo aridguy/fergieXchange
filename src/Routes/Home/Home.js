@@ -18,7 +18,7 @@ const Home = () => {
     const handleCheck = () => {
         let timerInterval
         Swal.fire({
-            
+
             html: 'checking login details <b></b>.',
             timer: 4000,
             timerProgressBar: true,
@@ -47,7 +47,7 @@ const Home = () => {
                     },
                 }
                 )
-            } else{
+            } else {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success!',

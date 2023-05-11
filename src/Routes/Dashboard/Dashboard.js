@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import './Admin.css';
 import jQuery from "jquery";
+import GiftCard1 from '../../Assets/frame1.svg'
+import GiftCard2 from '../../Assets/frame2.svg'
+import GiftCard3 from '../../Assets/amazon-gift-card-100-dollar-65311.png'
 
 
 
@@ -33,11 +36,16 @@ const Dashboard = () => {
         });
     });
 
+    const [incNoti, setIncNoti] = useState(0)
+    const incNotiHandler = () => {
+        setIncNoti((prevState) => prevState + 1)
+    }
+
     return (
         <div>
 
             <div className="page-wrapper chiller-theme toggled">
-                <a id="show-sidebar" className="btn btn-sm btn-dark" href="/dashboard">
+                <a id="show-sidebar" className="btn btn-sm btn-dark">
                     <i className="fas fa-bars"></i>
                 </a>
 
@@ -62,26 +70,26 @@ const Dashboard = () => {
                             <ul>
                                 <li className="header-menu"><span>General</span></li>
                                 <li className="sidebar-dropdown">
-                                    <a href="/dashboard"><i className="fa fa-tachometer-alt"></i><span>overview</span></a>
+                                    <a><i className="fa fa-tachometer-alt cursor"></i><span className="cursor">overview</span></a>
 
                                 </li>
 
                                 <li className="sidebar-dropdown">
-                                    <a href="/dashboard"><i className="fa fa-shopping-cart"></i><span>Crypto</span></a>
+                                    <a><i className="fab fa-bitcoin cursor"></i><span className="cursor">Crypto</span></a>
                                 </li>
 
                                 <li className="sidebar-dropdown">
-                                    <a href="/dashboard"><i className="far fa-gem"></i><span>Gift Cards</span></a>
-
-                                </li>
-
-                                <li className="sidebar-dropdown">
-                                    <a href="/dashboard"><i className="fa fa-chart-line"></i><span>Transactions</span></a>
+                                    <a><i className="fas fa-hand-holding-heart cursor"></i><span className="cursor">Gift Cards</span></a>
 
                                 </li>
 
                                 <li className="sidebar-dropdown">
-                                    <a href="/dashboard"><i className="fa fa-cog"></i><span>Settings</span></a>
+                                    <a><i className="fas fa-hand-holding-dollar cursor"></i><span className="cursor">Transactions</span></a>
+
+                                </li>
+
+                                <li className="sidebar-dropdown">
+                                    <a><i className="fa fa-cog cursor"></i><span className="cursor">Settings</span></a>
 
                                 </li>
 
@@ -112,8 +120,8 @@ const Dashboard = () => {
                             <div className="col-md-5">
                                 <div className="d-flex gap-5">
                                     <b className="text-dark">
-                                        <i className="fa fa-bell fa-2x"></i>
-                                        <span className="badge badge-pill badge-warning notification">3</span>
+                                        <i onClick={incNotiHandler} className="fa fa-bell fa-2x"></i>
+                                        <span className="badge badge-pill badge-warning notification">{incNoti}</span>
                                     </b>
                                     <section>
                                         <div className="d-flex gap-3">
@@ -121,7 +129,7 @@ const Dashboard = () => {
                                             <div className=""><strong className="getBig">Gbenga Fergie</strong> &nbsp;&nbsp;
                                                 <i onClick={handleOpenLogoutBtn} className="fas cursor fa-chevron-down"></i>
                                             </div>
-                                            { openLogoutBtn &&
+                                            {openLogoutBtn &&
                                                 // logout
                                                 <div className="hidden-logout">
                                                     <strong className="getBig cursor">
@@ -135,6 +143,57 @@ const Dashboard = () => {
                             </div>
                         </div>
                         <hr />
+                        {
+                            <main>
+                                <div className="row">
+                                    <div className="col-md-6"></div>
+                                    <div className="col-md-6">
+                                        <div>
+                                            <img width="70%" src={GiftCard3} alt="gift card iconics" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-4">
+                                        <div className="sellingRate p-5 getBig">
+                                            <small>Crypto buying rate</small> <br />
+                                            <h4>N720.00</h4> <br />
+                                            <small>per dollar</small>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div>
+                                            <img className="scallerCoin" width="100%" src={GiftCard1} alt="gift card iconics" />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div>
+                                            <img className="scallerCoin" width="95%" src={GiftCard2} alt="gift card iconics" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-1">
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div className="col-md-10">
+                                        <div className="wrapTransactions">
+                                            <div className="mt-5">
+                                                <span>Recent Transactions</span>
+                                                <p className="getBig">Transactions you make will appear here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-1">
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        }
                     </div>
                 </main>
 

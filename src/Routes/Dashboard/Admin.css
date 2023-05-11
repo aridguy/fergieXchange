@@ -38,6 +38,12 @@
 		opacity: 0;
 	}
 }
+
+
+
+
+
+
 .orange{
 	color: orange;
 }
@@ -49,12 +55,50 @@
 	background-color: #414f54;
 
 }
+.sellingRate{
+	border: 1px solid grey;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform: translateY(5px); /* levitation effect */
+	transition: transform 0.3s ease-out; /* smooth transition */
+}
+.sellingRate:hover{
+	transform: translateY(-20px); /* increase levitation effect on hover */
+}
+.scallerCoin{
+	position: relative;
+	transform: translateY(5px); /* levitation effect */
+	transition: transform 0.3s ease-out; /* smooth transition */
+}
+.scallerCoin:hover{
+	position: relative;
+	transform: translateY(-20px); /* increase levitation effect on hover */
+}
 
 .hidden-logout{
 	position: absolute;
 	top: 8em;
 	right: 8em;
+	background-color: rgb(229, 184, 121);
+	padding: 12px;
+	border-radius: 10px;
 }
+
+.wrapTransactions{
+	border: 1px solid rgba(0, 0, 0, 0.222);
+	width: 100%;
+	height: 20em;
+	border-radius: 7px;
+	text-align: center;
+	justify-content: center;
+	
+}
+
+
+
+
+
 
 body {
 	font-size: 0.9rem;
@@ -137,9 +181,9 @@ body {
 	margin: 0;
 }
 
-.sidebar-wrapper a {
+/* .sidebar-wrapper a {
 	text-decoration: none;
-}
+} */
 
 /*----------------sidebar-content----------------*/
 .sidebar-content {
