@@ -151,7 +151,7 @@ const Faq = () => {
                         </div>
                     </div>
                     <div className="col-md-5">
-                        <img className="" width='400' src={FaqIcon} alt="faq iconics" />
+                        <img className="" width='80%' src={FaqIcon} alt="faq iconics" />
                     </div>
                 </div>
             </div>

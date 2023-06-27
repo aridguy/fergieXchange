@@ -32,7 +32,8 @@
 }
 
 .gradients{
-    color: linear-gradient(red, yellow);
+    color: linear-gradient(red, yellow, rgb(5, 55, 121));
+    /* font-size: 40px; */
 }
 .bigger{
     font-size: 3.3em;

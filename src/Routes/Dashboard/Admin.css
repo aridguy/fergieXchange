@@ -53,8 +53,15 @@
 }
 .bkgWrap{
 	background-color: #414f54;
-
 }
+.boxes{
+	position: relative;
+	border-radius: 8px;
+	border: 1px solid rgba(128, 128, 128, 0.376);
+	width: 100%;
+	height: 15em;
+}
+
 .sellingRate{
 	border: 1px solid grey;
 	width: 100%;

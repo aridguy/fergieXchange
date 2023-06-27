@@ -1,28 +1,21 @@
 import React from "react";
 import Logo from "../../Assets/Logo.jpg"
-import Swal from 'sweetalert2'
-
+import './Navbar'
 
 const Navbar = () => {
-   const handleCheck = () =>{
-    Swal.fire({
-        title: 'Error!',
-        text: 'Do you want to continue',
-        icon: 'error',
-        confirmButtonText: 'Cool'
-      })
-   }
+  
 
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container">
-                    <a className="navbar-brand me-2" href="/">
+                    <a className="navbar-brand me-2 bold" href="/">
                         <img
+                            className=""
                             src={Logo}
                             height="16"
                             alt=" Logo"
-                        /> FERGIEXCHANGE LIMITED
+                        /> <b> FX-L</b>
 
                     </a>
                     <button
@@ -38,7 +31,7 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarButtonsExample">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li onClick={handleCheck} className="nav-item">
+                            <li className="nav-item">
                                 <span className="nav-link" href="/">About Us</span>
                             </li>
                             <li className="nav-item">

@@ -13,6 +13,8 @@ import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar'
 
 const Home = () => {
+
+
     const navigate = useNavigate()
 
     const handleCheck = () => {
@@ -235,9 +237,9 @@ const Home = () => {
                                                         <p><input type="email" className="form-control" placeholder="makanaki@aol.com" /></p>
                                                         <button onClick={handleCheck} className="btn btn-primary btn-block">Continue to Dashboard</button>
                                                         <div className="row mt-4">
-                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i class="fas fa-user-group"></i> New account!</span></div>
+                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i className="fas fa-user-group"></i> New account!</span></div>
                                                             <div className="col-md-4"><span onClick={handleLoginUsers} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-tie"></i> Login</span></div>
-                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i class="fas fa-user-secret"></i> Guest</span></div>
+                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-secret"></i> Guest</span></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -256,9 +258,9 @@ const Home = () => {
                                                         <p><input type="password" className="form-control" placeholder="confirm password" required /></p>
                                                         <button className="btn btn-primary btn-block">Register</button>
                                                         <div className="row mt-4">
-                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i class="fas fa-user-group"></i> New account!</span></div>
+                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i className="fas fa-user-group"></i> New account!</span></div>
                                                             <div className="col-md-4"><span onClick={handleLoginUsers} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-tie"></i> Login</span></div>
-                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i class="fas fa-user-secret"></i> Guest</span></div>
+                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i classname="fas fa-user-secret"></i> Guest</span></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -273,9 +275,9 @@ const Home = () => {
                                                         <p><input type="password" className="form-control" placeholder="password" /></p>
                                                         <button className="btn btn-primary btn-block">Login</button>
                                                         <div className="row mt-4">
-                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i class="fas fa-user-group"></i> New account!</span></div>
+                                                            <div className="col-md-4"><span onClick={handleRegisterNewUser} className="mt-3 cursor hyperlinks"> <i className="fas fa-user-group"></i> New account!</span></div>
                                                             <div className="col-md-4"><span onClick={handleLoginUsers} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-tie"></i> Login</span></div>
-                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i class="fas fa-user-secret"></i> Guest</span></div>
+                                                            <div className="col-md-4"><span onClick={handleGuests} className="mt-3 cursor hyperlinks mx-4"> <i className="fas fa-user-secret"></i> Guest</span></div>
                                                         </div>
                                                     </div>
                                                 </div>
