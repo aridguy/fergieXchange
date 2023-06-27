@@ -169,7 +169,7 @@ const Dashboard = () => {
         <div>
 
             <div className="page-wrapper chiller-theme toggled">
-                <a id="show-sidebar" className="btn btn-sm btn-dark">
+                <a href="/" id="show-sidebar" className="btn btn-sm btn-dark">
                     <i className="fas fa-bars"></i>
                 </a>
 
