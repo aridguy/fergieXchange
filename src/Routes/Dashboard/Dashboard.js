@@ -71,6 +71,27 @@ const Dashboard = () => {
             "initial_name": "DOGE",
             "rate": 730.00,
             "image": "https://nynm-quidax-strapi.s3.amazonaws.com/crypto_doge_0cbd52f330.svg"
+        },
+        {
+            "id": 10,
+            "name": "Dogecoin",
+            "initial_name": "DOGE",
+            "rate": 730.00,
+            "image": "https://nynm-quidax-strapi.s3.amazonaws.com/crypto_doge_0cbd52f330.svg"
+        },
+        {
+            "id": 11,
+            "name": "Binance",
+            "initial_name": "BNB",
+            "rate": 730.00,
+            "image": "https://nynm-quidax-strapi.s3.amazonaws.com/crypto_doge_0cbd52f330.svg"
+        },
+        {
+            "id": 12,
+            "name": "Tron",
+            "initial_name": "TRX",
+            "rate": 730.00,
+            "image": "https://nynm-quidax-strapi.s3.amazonaws.com/crypto_doge_0cbd52f330.svg"
         }
 
     ]
@@ -173,51 +194,47 @@ const Dashboard = () => {
                     <i className="fas fa-bars"></i>
                 </a>
 
+              
                 <nav id="sidebar" className="sidebar-wrapper">
-                    <div className="sidebar-content">
-                        <div className="sidebar-brand">
-                            <a href="/dashboard">FX-LIMITED</a>
-                            <div id="close-sidebar"><i className="fas fa-times"></i></div>
+                <div className="sidebar-content">
+                    <div className="sidebar-brand">
+                        <a href="/dashboard">FX-LIMITED</a>
+                        <div id="close-sidebar"></div>
+                    </div>
+
+                    <div className="sidebar-header">
+                        <div className="user-pic" >
+                            <i className="fa fa-user-circle fa-4x" aria-hidden="true"></i>
                         </div>
-
-                        <div className="sidebar-header">
-                            <div className="user-pic" >
-                                <i className="fa fa-user-circle fa-4x" aria-hidden="true"></i>
-                            </div>
-                            <div className="user-info">
-                                <span className="user-name"> <strong>Fergie Gbenga</strong></span>
-                                <span className="user-status"><i className="fa fa-circle"></i> <span>Active</span></span>
-                            </div>
-                        </div>
-
-                        <div className="sidebar-menu">
-                            <ul>
-                                <li className="header-menu"><span>General</span></li>
-                                <li className="sidebar-dropdown">
-                                    <a><i className="fa fa-tachometer-alt cursor"></i><span onClick={handleOpenOverView} className="cursor">overview</span></a>
-                                </li>
-                                <li className="sidebar-dropdown">
-                                    <a><i className="fab fa-bitcoin cursor"></i><span onClick={handleOpenCrypto} className="cursor">Trade Crypto</span></a>
-                                </li>
-                                <li className="sidebar-dropdown">
-                                    <a><i className="fas fa-hand-holding-heart cursor"></i><span onClick={handleOpenGiftCard} className="cursor">Trade Gift Cards</span></a>
-                                </li>
-                                <li className="sidebar-dropdown">
-                                    <a><i className="fas fa-hand-holding-dollar cursor"></i><span onClick={handleOpenTransaction} className="cursor">Transactions</span></a>
-
-                                </li>
-                                <li className="sidebar-dropdown">
-                                    <a><i className="fa fa-cog cursor"></i><span onClick={handleOpenSettings} className="cursor">Settings</span></a>
-                                </li>
-                                <li className="header-menu"><span>Extra</span></li>
-                                <li><a href="/dashboard"><i className="fa fa-book"></i><span>Documentation</span><span className="badge badge-pill badge-primary">Beta</span></a></li>
-                                <li><a href="/dashboard"><i className="fa fa-calendar"></i><span>Calendar</span></a></li>
-                                <li><a href="/dashboard"><i className="fa fa-folder"></i><span>Examples</span></a></li>
-                            </ul>
+                        <div className="user-info">
+                            <span className="user-name"> <strong>Fergie Gbenga</strong></span>
+                            <span className="user-status"><i className="fa fa-circle"></i> <span>Active</span></span>
                         </div>
                     </div>
-                </nav>
 
+                    <div className="sidebar-menu">
+                        <ul>
+                            <li className="header-menu"><b>General</b></li>
+                            <li className="sidebar-dropdown">
+                                <b><i className="fa fa-tachometer-alt cursor"></i> <span onClick={handleOpenOverView} className="cursor">overview</span></b>
+                            </li>
+                            <li className="sidebar-dropdown">
+                                <b><i className="fab fa-bitcoin cursor"></i> <span onClick={handleOpenCrypto} className="cursor">Trade Crypto</span></b>
+                            </li>
+                            <li className="sidebar-dropdown">
+                                <b><i className="fas fa-hand-holding-heart cursor"></i> <span onClick={handleOpenGiftCard} className="cursor">Trade Gift Cards</span></b>
+                            </li>
+                            <li className="sidebar-dropdown">
+                                <b><i className="fas fa-hand-holding-dollar cursor"></i> <span onClick={handleOpenTransaction} className="cursor">Transactions</span></b>
+                            </li>
+                            <li className="sidebar-dropdown">
+                                <b><i className="fa fa-cog cursor"></i> <span onClick={handleOpenSettings} className="cursor">Settings</span></b>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
                 <main className="page-content">
                     <div className="container-fluid">

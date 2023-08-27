@@ -20,7 +20,6 @@ const Home = () => {
     const handleCheck = () => {
         let timerInterval
         Swal.fire({
-
             html: 'checking login details <b></b>.',
             timer: 4000,
             timerProgressBar: true,
@@ -71,8 +70,7 @@ const Home = () => {
         AOS.init();
     }, [])
     const [openLogin, setOpenLogin] = useState(false);
-
-
+    
     const [currentProfileTab, setCurrentProfileTab] = useState('mission');
     const [openLoginTabs, setOpenLoginTabs] = useState(false);
     const [openRegTab, setOpenRegTab] = useState(false);
@@ -109,11 +107,7 @@ const Home = () => {
         setOpenRegTab(false);
         setGuestGo(false);
 
-
     }
-
-
-
 
     return (
         <div className="ani-backgrd">
