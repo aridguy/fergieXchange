@@ -495,11 +495,12 @@ body {
 
 .parentCalc{
   background-color: rgba(172, 170, 170, 0.519);
-  width: 100%;
+  width: 35em;
   height: 20em;
   border-radius: 8px;
   padding: 4em;
   cursor: pointer;
-  /* position: fixed; */
+  position: fixed;
+  right: 3em;
 
 }
